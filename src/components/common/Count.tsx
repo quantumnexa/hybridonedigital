@@ -1,7 +1,6 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import CountUp from "react-countup";
-import { InView } from "react-intersection-observer";
 
 interface CountType {
   number: number;
@@ -11,13 +10,21 @@ interface CountType {
 
 const Count = ({ number, text, add_style }: CountType) => {
   const [focus, setFocus] = useState<boolean>(false);
-  const visibleChangeHandler = (isVisible: boolean) => {
-    if (isVisible) {
-      if (!focus) {
+  const sentinelRef = useRef<HTMLSpanElement | null>(null);
+  useEffect(() => {
+    const el = sentinelRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      if (entry.isIntersecting && !focus) {
         setFocus(true);
       }
-    }
-  };
+    });
+    observer.observe(el);
+    return () => {
+      observer.disconnect();
+    };
+  }, [focus]);
 
   return (
     <>
@@ -25,11 +32,9 @@ const Count = ({ number, text, add_style }: CountType) => {
         {({ countUpRef }) => (
           <div className={`d-flex ${add_style ? "align-items-center justify-content-center" : ""} `}>
             <strong ref={countUpRef} />
-            <InView
-              as="span"
-              onChange={(inView: any) => visibleChangeHandler(inView)}>
-              {text && <span>{text}</span>} 
-            </InView>
+            <span ref={sentinelRef}>
+              {text && <span>{text}</span>}
+            </span>
           </div>
         )}
       </CountUp>
