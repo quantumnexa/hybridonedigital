@@ -2,7 +2,6 @@
 
 import { gsap } from "gsap";
 import { useEffect } from "react";
-import DarkLight from "@/components/common/DarkLight";
 import MouseMove from "@/components/common/MouseMove";
 import ScrollToTop from "@/components/common/ScrollToTop";
 
@@ -60,8 +59,7 @@ const Wrapper = ({ children }: any) => {
     <>
       {children}
 
-      <MouseMove />
-      <DarkLight />
+      <MouseMove />     
       <ScrollToTop />
     </>
   );

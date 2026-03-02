@@ -18,6 +18,7 @@ import AboutHomeFour from '@/components/about/AboutHomeFour';
 import Wrapper from '@/layouts/Wrapper'; 
 import AboutUs from '@/components/about/AboutUs';
 import FaqArea from '@/components/faq/FaqArea';
+import Link from 'next/link';
 
 
 // export const metadata = {
@@ -34,8 +35,43 @@ const index = () => {
         <div id="smooth-content">
           <main>
             <div style={{ borderBottom: '2px solid var(--accent-color)' }}>
-              <HeroHomeOne />
+              <section>
+              <div className="cs_hero cs_style1 cs_center cs_parallax cs_white" style={{ marginTop: '100px', minHeight: 'calc(100vh - 40px)' }}>
+                <div
+                  className="cs_hero_bg cs_bg cs_parallax_bg cs_hero_bg_full_width"
+                  style={{
+                    backgroundImage: 'url(/assets/img/hero-img.png)',
+                    backgroundSize: 'contain',
+                    backgroundPosition: 'top center',
+                    backgroundRepeat: 'no-repeat',
+                  }}
+                ></div>
+                <div className="container">
+                  <div className="cs_hero_text" style={{ color: '#f4f4f4' }}>
+                   
+                    <div className="cs_height_20 cs_height_lg_20"></div>
+                    <div className="cs_section_heading cs_style_1">
+                      <div className="cs_section_heading_text">
+                        <div className="cs_section_subtitle" style={{ color: '#f4f4f4' }}>Digital Marketing Agency</div>
+                      </div>
+                    </div>
+                    <div className="cs_height_20 cs_height_lg_20"></div>
+                    <h1 className="cs_hero_title"  style={{ color: '#f4f4f4' }}>Scale Your <span style={{ color: '#C6FF00' }}> Business </span> With <span style={{ color: '#C6FF00' }}> Data-Driven</span> Marketing.</h1>
+                    <div className="cs_height_40 cs_height_lg_30"></div>
+                    <div className="cs_hero_btn_wrap" style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                      <div className="cs_round_btn_wrap">
+                        <Link href="/portfolio" className="cs_hero_btn cs_round_btn btn-item">
+                          <span></span>
+                          Contact Us
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
             </div>
+            
             <div className="cs_height_100"></div>            
             <FunFactHomeOne />                
             {/* <MarqueeAreaHomeOne /> */}

@@ -124,12 +124,12 @@
 			transition: all 4s ease;
 		}
 		.t1 {
-			--color-1: #fff;
+			--color-1: #f4f4f4;
 			--color-2: #C6FF00;
 		}
 		.t2 {
 			--color-1: #C6FF00;
-			--color-2: #fff;
+			--color-2: #f4f4f4;
 		}
 		.t3 {
 			--color-1: black;
@@ -304,17 +304,17 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid var(--heading-color);
+	border: 1px solid var(--accent-color);
 	border-radius: 50%;
 	padding: 30px 15px;
-	color: var(--heading-color);
+	color: var(--cr_banner-color);
 	span {
 		position: absolute;
 		width: 0px;
 		height: 0px;
 		left: 0;
 		top: 0;
-		background-color: var(--heading-color);
+		background-color: var(--accent-color);
 		z-index: -1;
 		border-radius: 100%;
 		transition: all 0.7s;
