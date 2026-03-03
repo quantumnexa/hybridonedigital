@@ -2,7 +2,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import HeaderOne from '@/layouts/headers/HeaderOne';
+import HeaderRounded from '@/layouts/headers/HeaderRounded';
 import HeroHomeOne from '@/components/hero/HeroHomeOne';
 import AboutHomeOne from '@/components/about/AboutHomeOne';
 import ServiceHomeOne from '@/components/service/ServiceHomeOne';
@@ -30,11 +30,11 @@ const index = () => {
 
   return (
     <Wrapper>
-      <HeaderOne />
+      <HeaderRounded />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <div style={{ borderBottom: '2px solid var(--accent-color)' }}>
+            <div>
               <section>
               <div className="cs_hero cs_style1 cs_center cs_parallax cs_white" style={{ marginTop: '100px', minHeight: 'calc(100vh - 40px)' }}>
                 <div

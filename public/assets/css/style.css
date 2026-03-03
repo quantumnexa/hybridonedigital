@@ -3258,8 +3258,8 @@ label {
 }
 
 .cs_site_header.cs_style1.cs_sticky-active {
-    background-color: #f4f4f4;
-    box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
+    background-color: #d5d6d0;
+    box-shadow: none;
 }
 
 .cs_site_header.cs_style1 .cs_icon_btn {
@@ -3367,7 +3367,7 @@ label {
 }
 
 .cs_site_header_style1 {
-    border-bottom: 1px solid #1a188d;
+    border-bottom: none;
 }
 
 .cs_site_header_style1 .cs_main_header_right {
@@ -3544,7 +3544,7 @@ label {
     top: -110px;
     opacity: 0;
     transition: all 0.4s ease;
-    background-color: #f4f4f4;
+    background-color: #d5d6d0;
 }
 
 .cs_gescout_show {
@@ -4035,6 +4035,37 @@ label {
 
 .dark .cs_gescout_show .cs_main_header {
     background-color: #000;
+}
+
+.cs_site_header.cs_style1 .cs_main_header {
+    background-color: #d5d6d0;
+}
+
+.cs_site_header.cs_style_rounded .cs_main_header {
+    background-color: #d5d6d0;
+    margin: 12px 12px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: none;
+    border-bottom: 0;
+}
+
+.cs_site_header.cs_style_rounded.cs_sticky-active .cs_main_header,
+.cs_site_header.cs_style_rounded.cs_gescout_sticky .cs_main_header,
+.cs_site_header.cs_style_rounded.cs_gescout_show .cs_main_header {
+    background-color: #d5d6d0;
+}
+
+.cs_site_header,
+.cs_site_header .cs_main_header {
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+.cs_site_header.cs_style1 .cs_nav .cs_nav_list>li>a:before,
+.cs_site_header_style1 .cs_nav .cs_nav_list>li.current-menu-item>a:before {
+    display: none;
 }
 
 .dark .cs_site_header.cs_style1 .cs_icon_btn {
