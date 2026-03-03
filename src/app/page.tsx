@@ -52,7 +52,7 @@ const index = () => {
                     <div className="cs_height_20 cs_height_lg_20"></div>
                     <div className="cs_section_heading cs_style_1">
                       <div className="cs_section_heading_text">
-                        <div className="cs_section_subtitle" style={{ color: '#f4f4f4' }}>Digital Marketing Agency</div>
+                        <div className="cs_section_subtitle" style={{ color: '#f4f4f4' }}>Hybrid One Digital</div>
                       </div>
                     </div>
                     <div className="cs_height_20 cs_height_lg_20"></div>
