@@ -79,8 +79,8 @@ const index = () => {
             <AboutHomeOne />
             
             <ServiceHomeOne />
-            <PortfolioHomeOne />
-            {/* <AwardsHomeOne /> */}
+           {/* <PortfolioHomeOne />
+           <AwardsHomeOne /> */}
             <Testimonial />
                  
             <FaqArea compact={true} />
