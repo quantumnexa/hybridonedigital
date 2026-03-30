@@ -138,10 +138,10 @@ const Testimonial = ({ style_service }: any) => {
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                               d="M0 26.2855H12.9844L4.32807 43.4283H17.3125L25.9689 26.2855V0.571289H0V26.2855Z"
-                              fill="#C6FF00" />
+                              fill="var(--accent-color)" />
                             <path
                               d="M34.625 0.571289V26.2855H47.6094L38.9531 43.4283H51.9375L60.5939 26.2855V0.571289H34.625Z"
-                              fill="#C6FF00" />
+                              fill="var(--accent-color)" />
                           </svg>
                         </div>
                         <blockquote className="cs_testimonial_text">

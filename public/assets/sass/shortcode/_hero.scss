@@ -35,7 +35,7 @@
 		font-size: 18px;
 		line-height: 1.6em;
 		margin-bottom: 0px;
-		color: --primary-color;
+		color: var(--primary-color);
 		display: inline-block;
 		> svg,
 		img {
@@ -124,16 +124,16 @@
 			transition: all 4s ease;
 		}
 		.t1 {
-			--color-1: #f4f4f4;
-			--color-2: #C6FF00;
+			--color-1: var(--common-color-white);
+			--color-2: var(--accent-color);
 		}
 		.t2 {
-			--color-1: #C6FF00;
-			--color-2: #f4f4f4;
+			--color-1: var(--accent-color);
+			--color-2: var(--common-color-white);
 		}
 		.t3 {
-			--color-1: black;
-			--color-2: #ff4800;
+			--color-1: var(--primary-color);
+			--color-2: var(--accent-color);
 		}
 	}
 }

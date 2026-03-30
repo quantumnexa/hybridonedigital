@@ -7,14 +7,10 @@ import brightnes from '@/assets/img/brightnes.svg';
 
 const DarkLight = () => {
   const [open, setOpen] = useState<boolean>(false);
-  const [activeMode, setActiveMode] = useState<string>('light'); 
-
-  useEffect(() => {
-    const storedMode = localStorage.getItem('mode');
-    if (storedMode) {
-      setActiveMode(storedMode);
-    }
-  }, []);
+  const [activeMode, setActiveMode] = useState<string>(() => {
+    if (typeof window === 'undefined') return 'light';
+    return localStorage.getItem('mode') ?? 'light';
+  }); 
 
   useEffect(() => {
     if (typeof window !== 'undefined') {

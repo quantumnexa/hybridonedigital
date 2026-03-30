@@ -47,16 +47,16 @@ const index = () => {
                   }}
                 ></div>
                 <div className="container">
-                  <div className="cs_hero_text" style={{ color: '#f4f4f4' }}>
+                  <div className="cs_hero_text" style={{ color: 'var(--common-color-white)' }}>
                    
                     <div className="cs_height_20 cs_height_lg_20"></div>
                     <div className="cs_section_heading cs_style_1">
                       <div className="cs_section_heading_text">
-                        <div className="cs_section_subtitle" style={{ color: '#f4f4f4' }}>Hybrid One Digital</div>
+                        <div className="cs_section_subtitle" style={{ color: 'var(--common-color-white)' }}>Hybrid One Digital</div>
                       </div>
                     </div>
                     <div className="cs_height_20 cs_height_lg_20"></div>
-                    <h1 className="cs_hero_title"  style={{ color: '#f4f4f4' }}>Scale Your <span style={{ color: '#C6FF00' }}> Business </span> With <span style={{ color: '#C6FF00' }}> Data-Driven</span> Marketing.</h1>
+                    <h1 className="cs_hero_title"  style={{ color: 'var(--common-color-white)' }}>Scale Your <span style={{ color: 'var(--accent-color)' }}> Business </span> With <span style={{ color: 'var(--accent-color)' }}> Data-Driven</span> Marketing.</h1>
                     <div className="cs_height_40 cs_height_lg_30"></div>
                     <div className="cs_hero_btn_wrap" style={{ display: 'flex', justifyContent: 'flex-end' }}>
                       <div className="cs_round_btn_wrap">

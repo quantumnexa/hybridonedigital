@@ -1,7 +1,7 @@
 
 'use client'
 
-import React, { useState } from 'react';
+import React from 'react';
 import Wrapper from '@/layouts/Wrapper';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import HeroHomeFive from '@/components/hero/HeroHomeFive';
@@ -26,9 +26,7 @@ import FooterOne from '@/layouts/footers/FooterOne';
 
 
 
-const index = () => {
-  const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
-
+const MarketingAgencyPage = () => {
   return (
     <Wrapper>
       <HeaderOne />
@@ -56,4 +54,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default MarketingAgencyPage;

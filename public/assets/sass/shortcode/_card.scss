@@ -46,7 +46,7 @@
         right: 0;
         top: 50%;
         transform: translateY(-50%);
-        color: --primary-color;
+        color: var(--primary-color);
     }
     .cs_card_link {
         position: relative;
@@ -185,7 +185,7 @@
                 width: calc(100% - 180px);
                 bottom: 0;
                 right: 0;
-                background-color: rgba(var(--primary-color), 0.1);
+                background-color: rgba(var(--primary-rgb), 0.1);
             }
         }
     }

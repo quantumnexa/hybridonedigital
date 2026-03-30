@@ -74,7 +74,7 @@
         transition: all 0.3s ease;
         cursor: pointer;
         border-radius: 50%;
-        color: --primary-color;
+        color: var(--primary-color);
         margin-right: -10px;
         &.cs_color_1 {
             color: $white;
